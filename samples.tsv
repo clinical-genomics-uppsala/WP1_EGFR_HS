@@ -1,0 +1,3 @@
+sample	master_primerclip_file	hotspot	analyzable_region
+20-233	bedfiles/18-2132_EGFR_MID_Masterfile.mod20191010.txt	Mutations_Lung_20190130.csv	AccelAmplicon_EGFR-HS_EGFR_C797_added.bed
+20-265	bedfiles/18-2132_EGFR_MID_Masterfile.mod20191010.txt	Mutations_Lung_20190130.csv	AccelAmplicon_EGFR-HS_EGFR_C797_added.bed

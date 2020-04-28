@@ -1,0 +1,3 @@
+sample	unit	fq1	fq2
+20-233	L001	/gluster-storage-volume/projects/wp1/nobackup/ngs/klinik/analys/2020/20200211_JHLU_HS/SWIFT_Pipeline/20-233_S5_L001_R1_001.fastq.gz	/gluster-storage-volume/projects/wp1/nobackup/ngs/klinik/analys/2020/20200211_JHLU_HS/SWIFT_Pipeline/20-233_S5_L001_R2_001.fastq.gz
+20-265	L001	/gluster-storage-volume/projects/wp1/nobackup/ngs/klinik/analys/2020/20200211_JHLU_HS/SWIFT_Pipeline/20-265_S6_L001_R1_001.fastq.gz	/gluster-storage-volume/projects/wp1/nobackup/ngs/klinik/analys/2020/20200211_JHLU_HS/SWIFT_Pipeline/20-265_S6_L001_R2_001.fastq.gz

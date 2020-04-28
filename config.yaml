@@ -1,0 +1,56 @@
+num_fastq_split: 1
+
+samples: samples.tsv
+
+units: units.tsv
+
+depth_levels: [ [300 ,"ok","yes"], [30 ,"low","yes"], [0 ,"low","not analyzable"] ]
+prefered_transcripts: "-"
+multibp_file: "/data/ref_data/wp1/refFiles_20190130/refFiles/MultipleBp_variations.csv"
+chr_mapping_file: "/sw/pipelines/sera/18.0.5/bin/config/reference.hg19.Info"
+
+reference_genome: /data/ref_genomes/hg19/bwa/BWA_0.7.10_refseq/hg19.with.mt.fasta
+reference_genome_name: hg19.with.mt
+reference_genome_date: 200902
+reference_contigs: reference.hg19.Info
+
+assembly: hg19
+
+lofreq: ""
+
+known_sites_indel: 
+  - /data/ref_data/wp1/refFiles_EGFR_HS/gatk/GRCh37.75/Mills_and_1000G_gold_standard.indels.b37.vcf
+  - /data/ref_data/wp1/refFiles_EGFR_HS/gatk/GRCh37.75/1000G_phase1.indels.b37.vcf
+
+known_sites:  
+  - /data/ref_data/wp1/refFiles_EGFR_HS/gatk/GRCh37.75/dbsnp_138.b37.vcf
+  - /data/ref_data/wp1/refFiles_EGFR_HS/gatk/GRCh37.75/1000G_phase1.indels.b37.vcf
+  - /data/ref_data/wp1/refFiles_EGFR_HS/gatk/GRCh37.75/hapmap_3.3.b37.vcf
+
+
+annovar:
+  build_version: hg19
+  database:  /data/ref_data/hg19/annovar/annovar_2015.03.22/annovar_humandb
+  protocols:
+    refGene:
+      argument: "'-splicing_threshold 5'"
+      operation: g
+    1000g2015aug_eur:
+      argument: ""
+      operation: f
+    snp138:
+      argument: ""
+      operation: f
+    snp138NonFlagged:
+      argument: ""
+      operation: f
+    esp6500siv2_ea:
+      argument: ""
+      operation: f
+    cosmic70:
+      argument: ""
+      operation: f
+    clinvar_20150629:
+      argument: ""
+      operation: f
+
